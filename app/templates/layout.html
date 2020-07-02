@@ -1,0 +1,21 @@
+
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}
+    {{title}}
+{% endblock %}
+
+{% block navbar%}
+<nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">CRUD</a>
+    <h5 class="nav-link disabled"> Bienvenido {{ name }}</h5>
+    <a class="nav-link btn btn-light" href="{{ url_for('logout') }}"> salir </a>
+</nav>
+{% endblock%}
+
+{% block content%}
+    {% block container%}
+    {% endblock%}
+{% endblock%}
+
+
